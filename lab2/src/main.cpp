@@ -15,7 +15,7 @@ int main() {
     do{
         menu.get_cords(mycircle); // Prompt for entering cords. Populates mycircle (pass by ref) with the entered values.
         menu.menu(); // Shows menu options & proceeds accordingly
-        switch (menu.choice) {
+        switch (menu.get_choice()) {
             case 1: {
                 cout << "Radius: " << mycircle.radius() << endl;
                 break;
@@ -49,7 +49,7 @@ int main() {
             }
         }
 
-    } while(!menu.exit);
+    } while(!menu.get_exit());
 
     return 0;
 }

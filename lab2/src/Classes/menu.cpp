@@ -47,6 +47,14 @@ void Menu::set_exit() {
 	exit = 1;
 }
 
+int Menu::get_exit() {
+	return exit;
+}
+
+int Menu::get_choice() {
+	return choice;
+}
+
 void Menu::set_enter_cords() {
 	enter_cords = 1;
 }
